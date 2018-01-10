@@ -6,8 +6,8 @@ router.get('/', (req, res, next) => {
 
   var data = {
       title: 'ログイン',
-      content: 'テキストテキストテキスト',
-      link_application: {href:'/application', text:'アプリ一覧 ＞'},
+      content: 'メールアドレス',
+      link_application: {href:'/application'},
   };    
            
   res.render('index', data);

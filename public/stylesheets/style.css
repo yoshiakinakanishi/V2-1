@@ -1,8 +1,204 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding: auto;
+  background-color: #e7e7e7;
+  position: relative;
 }
 
 a {
-  color: #00B7FF;
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ul {
+  list-style:none;
+}
+
+.header_title {
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 1.5em;
+  background-color: #fff;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px; 
+}
+
+.login_wrap {
+  width: 170px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.login_btn {
+  width: 170px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #00cccc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login_btn:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+/*-- application/index.ejs --*/
+
+.header_list {
+  position: absolute;
+  top: -7px;
+  right: 45px;
+}
+
+.header_btn {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #999999;
+  text-align: center;
+  border-radius: 3px;
+  float: left;
+}
+
+.header_btn:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.first {
+  margin-right: 20px;
+}
+
+.header_btn > a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+}
+
+.section_box {
+  position: relative;
+  width: 750px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
+  margin: 25px auto;
+}
+
+.select_btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: deeppink;
+  border-radius: 3px;
+}
+
+.select_btn > a {
+  color: #fff;
+  display: block;
+}
+
+.select_btn:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.edit_btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.edit_btn > a {
+  color: #626262;
+  display: block;
+}
+
+.edit_btn:hover {
+  background-color: #e5e5e5;
+  transition: 0.7s;
+}
+
+/*-- application/edit.ejs --*/
+
+.item_edit {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
+  margin: 0 auto;
+}
+
+/*-- transmit/index.ejs --*/
+
+.header_title_main {
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 1.5em;
+  background-color: #fff;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+  padding-left: 300px;
+}
+
+.left_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+  padding-top: 150px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.left_nav li {
+  padding: 20px;
+}
+
+.left_nav li a {
+  color: #626262;
+  display: block;
+}
+
+.left_nav li:hover {
+  background-color: #e5e5e5;
+  transition: 0.7s;
+}
+
+.transmit_contents {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  width: 700px;
+  height: 500px;
+  background-color:#fff;
+  border-radius: 3px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+}
+
+/*-- transmit/web.ejs --*/
+
+.new_reservation {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  width: 980px;
+  height: 500px;
+  background-color:#fff;
+  border-radius: 3px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
 }
