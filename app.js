@@ -6,18 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-
 var application = require('./routes/application'); // application配下
 var transmit = require('./routes/transmit'); // transmit配下
-
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -26,14 +22,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
-
-app.use('/application/index', application); // application配下
-app.use('/application/item', application); // application配下
-
-app.use('/transmit/index', transmit); // transmit配下
-app.use('/transmit/reservation', transmit); // transmit配下
-app.use('/transmit/done', transmit); // transmit配下
+// application配下
+app.use('/application', application); 
+app.use('/application/item', application);
+app.use('/application/confirm', application);
+ // transmit配下
+app.use('/transmit', transmit);
+app.use('/transmit/reservation', transmit); 
+app.use('/transmit/done', transmit);
+app.use('/transmit/web', transmit);
 
 
 // catch 404 and forward to error handler
