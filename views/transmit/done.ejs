@@ -12,14 +12,18 @@
     </ul>
 
     <ul class="left_nav">
-      <li><a href="<%= link_transmit_web.href %>"><%= link_transmit_web.text%></a></li>
       <li><a href="<%= link_transmit.href %>"><%= link_transmit.text%></a></li>
-      <li><a href="*">ブラウザ向けレポート</a></li>    
+      <li><a href="<%= link_transmit_web.href %>"><%= link_transmit_web.text%></a></li>
+      <li><a href="https://redash.io/" target="blank">ブラウザ向けレポート</a></li>    
     </ul>
 
     <ul class="transmit_contents">
-      <li><a href="<%= link_transmit_done.href %>"><%= link_transmit_done.text%></li>
+      <li><a href="<%= link_transmit_done.href %>"><%= link_transmit_done.text%></a></li>
     </ul>
+
+    <div class="main_title"><%= main_title %></div>
+    <div class="app_label"></div>
+    <div class="appChange_btn"><a href="<%= link_application.href %>"><%= link_application.text%></a></div>
 
   </body>
 </html>

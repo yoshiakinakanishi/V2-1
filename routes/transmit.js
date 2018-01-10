@@ -5,6 +5,7 @@ var router = express.Router();
 router.get('/', (req, res, next) => {
   var data = {
       title: '配信登録一覧リスト',
+      main_title: '配信登録リスト',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
       link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
@@ -20,6 +21,7 @@ router.get('/', (req, res, next) => {
 router.get('/reservation', (req, res, next) => {
   var data = {
       title: '配信内容の編集',
+      main_title: '配信内容の編集',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
       link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
@@ -35,6 +37,7 @@ router.get('/reservation', (req, res, next) => {
 router.get('/done', (req, res, next) => {
   var data = {
       title: '配信内容の確認',
+      main_title: '配信内容の確認',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
       link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
@@ -51,6 +54,7 @@ router.get('/done', (req, res, next) => {
 router.get('/web', (req, res, next) => {
   var data = {
       title: 'ブラウザ向け新規配信登録',
+      main_title: 'ブラウザ向け新規配信登録',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
       link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},

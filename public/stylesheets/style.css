@@ -19,7 +19,7 @@ ul {
   width: auto;
   height: 50px;
   line-height: 50px;
-  padding-left: 1.5em;
+  padding-left: 2.3em;
   background-color: #fff;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px; 
 }
@@ -41,7 +41,7 @@ ul {
 
 .login_btn:hover {
   opacity: 0.5;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 /*-- application/index.ejs --*/
@@ -58,13 +58,14 @@ ul {
   line-height: 30px;
   background-color: #999999;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 2px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
   float: left;
 }
 
 .header_btn:hover {
   opacity: 0.5;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .first {
@@ -82,21 +83,22 @@ ul {
   width: 750px;
   height: 200px;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
   margin: 25px auto;
 }
 
 .select_btn {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 180px;
+  bottom: 12px;
+  left: 15px;
+  width: 160px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   background-color: deeppink;
-  border-radius: 3px;
+  border-radius: 2px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
 }
 
 .select_btn > a {
@@ -106,7 +108,7 @@ ul {
 
 .select_btn:hover {
   opacity: 0.5;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .edit_btn {
@@ -117,7 +119,7 @@ ul {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .edit_btn > a {
@@ -127,7 +129,7 @@ ul {
 
 .edit_btn:hover {
   background-color: #e5e5e5;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 /*-- application/edit.ejs --*/
@@ -135,12 +137,56 @@ ul {
 .item_edit {
   width: 90%;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
   margin: 0 auto;
 }
 
 /*-- transmit/index.ejs --*/
+
+.app_label {
+  position: fixed;
+  top: 20px;
+  left: 15px;
+  width: 220px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;   
+}
+
+.appChange_btn {
+  position: fixed;
+  top: 195px;
+  left: 15px;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+  text-align: center;
+}
+
+.appChange_btn a {
+  display: block;
+  font-size: 14px;
+  color: #626262;
+}
+
+.appChange_btn:hover {
+  background-color: #e0e0e0;
+  transition: 0.5s;
+}
+
+.main_title {
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #626262;
+}
 
 .header_title_main {
   width: auto;
@@ -160,13 +206,13 @@ ul {
   height: 500px;
   background-color: #fff;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;
-  padding-top: 150px;
+  padding-top: 260px;
   padding-left: 0;
   margin: 0;
 }
 
 .left_nav li {
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 .left_nav li a {
@@ -176,17 +222,17 @@ ul {
 
 .left_nav li:hover {
   background-color: #e5e5e5;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .transmit_contents {
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 300px;
-  width: 980px;
-  height: 500px;
+  width: 965px;
+  height: 1000px;
   background-color:#fff;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;
 }
 
@@ -194,11 +240,11 @@ ul {
 
 .new_reservation {
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 300px;
-  width: 980px;
-  height: 500px;
+  width: 965px;
+  height: 1000px;
   background-color:#fff;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;
 }
