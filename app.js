@@ -28,8 +28,9 @@ app.use('/application/item', application);
 app.use('/application/confirm', application);
  // transmit配下
 app.use('/transmit', transmit);
-app.use('/transmit/reservation', transmit); 
+app.use('/transmit/reservation', transmit);
 app.use('/transmit/done', transmit);
+app.use('/transmit/confirm', transmit);
 app.use('/transmit/web', transmit);
 
 

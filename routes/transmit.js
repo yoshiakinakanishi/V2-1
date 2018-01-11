@@ -4,14 +4,13 @@ var router = express.Router();
 // transmit
 router.get('/', (req, res, next) => {
   var data = {
-      title: '配信登録一覧リスト',
-      main_title: '配信登録リスト',
+      title: '配信予約リスト',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
-      link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
-      link_transmit: {href:'/transmit', text:'配信登録リスト'},
+      link_transmit: {href:'/transmit', text:'配信予約リスト'},
+      link_transmit_done: {href:'/transmit/done', text:'配信済みリスト'},
+      link_transmit_web: {href:'/transmit/web', text:'新規配信登録'},
       link_transmit_reservation: {href:'/transmit/reservation', text:'編集'},
-      link_transmit_done: {href:'/transmit/done', text:'確認'}
   };    
            
   res.render('transmit', data);
@@ -21,13 +20,11 @@ router.get('/', (req, res, next) => {
 router.get('/reservation', (req, res, next) => {
   var data = {
       title: '配信内容の編集',
-      main_title: '配信内容の編集',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
-      link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
-      link_transmit: {href:'/transmit', text:'配信登録リスト'},
-      link_transmit_reservation: {href:'/transmit/reservation', text:'編集'},
-      link_transmit_done: {href:'/transmit/done', text:'確認'}
+      link_transmit: {href:'/transmit', text:'配信予約リスト'},
+      link_transmit_done: {href:'/transmit/done', text:'配信済みリスト'},
+      link_transmit_web: {href:'/transmit/web', text:'新規配信登録'},
   };    
            
   res.render('transmit/reservation', data);
@@ -36,31 +33,43 @@ router.get('/reservation', (req, res, next) => {
 // transmit/done
 router.get('/done', (req, res, next) => {
   var data = {
-      title: '配信内容の確認',
-      main_title: '配信内容の確認',
+      title: '配信済みリスト',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
-      link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
-      link_transmit: {href:'/transmit', text:'配信登録リスト'},
-      link_transmit_reservation: {href:'/transmit/reservation', text:'編集'},
-      link_transmit_done: {href:'/transmit/done', text:'確認'}
+      link_transmit: {href:'/transmit', text:'配信予約リスト'},
+      link_transmit_done: {href:'/transmit/done', text:'配信済みリスト'},
+      link_transmit_web: {href:'/transmit/web', text:'新規配信登録'},
+      link_transmit_confirm: {href:'/transmit/confirm', text:'確認'}
   };    
            
   res.render('transmit/done', data);
 });
 
 
+// transmit/confirm
+router.get('/confirm', (req, res, next) => {
+  var data = {
+      title: '配信内容の確認',
+      link: {href:'/', text:'ログアウト'},
+      link_application: {href:'/application', text:'アプリ一覧'},
+      link_transmit: {href:'/transmit', text:'配信予約リスト'},
+      link_transmit_done: {href:'/transmit/done', text:'配信済みリスト'},
+      link_transmit_web: {href:'/transmit/web', text:'新規配信登録'},
+  };    
+           
+  res.render('transmit/confirm', data);
+});
+
+
 // transmit/web
 router.get('/web', (req, res, next) => {
   var data = {
-      title: 'ブラウザ向け新規配信登録',
-      main_title: 'ブラウザ向け新規配信登録',
+      title: '新規配信登録',
       link: {href:'/', text:'ログアウト'},
       link_application: {href:'/application', text:'アプリ一覧'},
-      link_transmit_web: {href:'/transmit/web', text:'ブラウザ向け新規配信登録'},
-      link_transmit: {href:'/transmit', text:'配信登録リスト'},
-      link_transmit_reservation: {href:'/transmit/reservation', text:'編集'},
-      link_transmit_done: {href:'/transmit/done', text:'確認'}
+      link_transmit: {href:'/transmit', text:'配信予約リスト'},
+      link_transmit_done: {href:'/transmit/done', text:'配信済みリスト'},
+      link_transmit_web: {href:'/transmit/web', text:'新規配信登録'},
   };    
            
   res.render('transmit/web', data);

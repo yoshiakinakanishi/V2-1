@@ -21,7 +21,9 @@ ul {
   line-height: 50px;
   padding-left: 2.3em;
   background-color: #fff;
-  box-shadow: rgb(170, 170, 170) 0px 1px 4px; 
+  box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+  color: #626262;
+  font-size: 16px;
 }
 
 .login_wrap {
@@ -181,7 +183,7 @@ ul {
 
 .main_title {
   position: absolute;
-  top: 70px;
+  top: 80px;
   left: 300px;
   font-weight: bold;
   font-size: 22px;
@@ -196,6 +198,8 @@ ul {
   background-color: #fff;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;
   padding-left: 300px;
+  color: #626262;
+  font-size: 16px;
 }
 
 .left_nav {
@@ -227,7 +231,7 @@ ul {
 
 .transmit_contents {
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 300px;
   width: 965px;
   height: 1000px;
@@ -240,11 +244,18 @@ ul {
 
 .new_reservation {
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 300px;
-  width: 965px;
-  height: 1000px;
+  width: 935px;
+  height: 700px;
   background-color:#fff;
   border-radius: 2px;
   box-shadow: rgb(170, 170, 170) 0px 1px 4px;
+  padding: 35px;
+}
+
+.new_reservation li {
+  font-weight: bold;
+  color: deeppink;
+  font-size: 17px; 
 }
